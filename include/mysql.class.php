@@ -65,19 +65,20 @@ class MySql
 
 	//初始化变量
     function Init($pconnect=false)
-    {
-      	/*$services_json = json_decode(getenv("VCAP_SERVICES"),true);
+    { 
+        $services_json = json_decode(getenv("VCAP_SERVICES"),true);
         $mysql_config = $services_json["mysql-5.1"][0]["credentials"];
         $username = $mysql_config["username"];
         $password = $mysql_config["password"];
         $hostname = $mysql_config["hostname"];        
-        $db = $mysql_config["name"];*/ 
-         
-        $this->db_host      = $GLOBALS['db_host'];
-        $this->db_user      = $GLOBALS['db_user'];
-        $this->db_pwd       = $GLOBALS['db_pwd'];
-        $this->db_name      = $GLOBALS['db_name'];
-        $this->db_tablepre  = $GLOBALS['db_tablepre'];
+        $db = $mysql_config["name"];   
+           
+        $this->db_host      = $hostname;
+        $this->db_user      = $username;
+        $this->db_pwd       = $password;
+        $this->db_name      = $db;
+        $this->db_tablepre  = 'hy_';
+        
         $this->linkid       = 0;
 		$this->result['me'] = 0;
         $this->querystring  = '';

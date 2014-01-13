@@ -50,6 +50,7 @@ $username = $mysql_config["username"];
 $password = $mysql_config["password"];
 $hostname = $mysql_config["hostname"];        
 $db = $mysql_config["name"]; 
+$db_tablepre = 'hy_';
 
 $admin_username ='hongyuangroup';
 $admin_pwd ='hongyuan123';
