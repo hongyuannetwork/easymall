@@ -173,7 +173,7 @@ switch($s)
 
 				//导入网站配置
 				//替换安装地址与目录
-				$data_str = "INSERT INTO `#@__webconfig` VALUES('1','cfg_webname','网站名称','0','string','宏远网络技术团队','1');
+				$data_str = "INSERT INTO `#@__webconfig` VALUES('1','cfg_webname','网站名称','0','string','宏远网络工作室','1');
 				INSERT INTO `#@__webconfig` VALUES('1','cfg_weburl','网站地址','0','string','$baseurl','2');
 				INSERT INTO `#@__webconfig` VALUES('1','cfg_webpath','网站目录','0','string','$basepath','3');
 				INSERT INTO `#@__webconfig` VALUES('1','cfg_author','网站作者','0','string','','4');
